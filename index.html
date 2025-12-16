@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swavey Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- 3D Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Login Screen -->
+    <div id="login-screen" class="screen active">
+        <div class="login-card">
+            <h1>Swavey Services</h1>
+            <p>Exclusive Access Required</p>
+            <input type="password" id="access-code" placeholder="Enter Access Code" autocomplete="off">
+            <button id="login-btn">Enter</button>
+            <p id="login-error" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Main Generator Screen -->
+    <div id="main-screen" class="screen">
+        <div class="header">
+            <h1>Swavey Services</h1>
+            <p>Premium Nitro Generator & Checker</p>
+            <button id="logout-btn">Logout</button>
+        </div>
+
+        <div class="controls">
+            <button id="generate-btn">Generate & Check 10 Codes</button>
+            <button id="clear-btn">Clear Results</button>
+        </div>
+
+        <div id="results" class="results-grid"></div>
+    </div>
+
+    <!-- Particles.js for 3D background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
